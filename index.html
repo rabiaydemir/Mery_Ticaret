@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mery Ticaret</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        .carousel {
+            margin: 0 auto;
+        }
+
+        .carousel-item {
+            height: 400px;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: #ffffff;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .product-images {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .product-images .row>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .product-images img {
+            width: 150px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer .container>div {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 768px) {
+            footer .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/images/logo.png" alt="Logo" style="height: 80px; width: auto; margin-right: 2px;">
+                    Mery Ticaret
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contact">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slider Section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('/images/2.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/3.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/4.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/5.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/6.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/7.jpg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/8.jpeg');"></div>
+            <div class="carousel-item" style="background-image: url('/images/shops.jpeg');"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Hakkımızda</h2>
+            <p>MERY olarak, online alışveriş hizmetimizle otomotiv yedek parça ve araç bakım malzemelerine herkesin
+                kolayca ve hızlı bir şekilde erişebilmesini sağlıyoruz.</p>
+            <p>Ticari faaliyetlerine otomotiv sektörü ile başlayan MERY, güncel koşullara ve müşterilerinin
+                ihtiyaçlarına yönelik sürekli olarak değişim ve gelişimini sürdürmektedir.</p>
+            <p>Tüm online ödemeli alışverişlerinizde güvenli alışverişin keyfini çıkarabilirsiniz.</p>
+        </div>
+    </section>
+
+    <!-- Product Images and Social Media Links -->
+    <section class="product-images">
+        <div class="container">
+            <div class="row">
+                <div class="social-icons">
+                    <h3>Satış Noktaları</h3>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://www.trendyol.com/magaza/mery-ticaret-m-1009410?sst=0"><img src="/images/trendyol.png" alt="Trendyol" /></a>
+                        <a href="http://www.hepsiburada.com/magaza/mery-ticaret"><img src="/images/hepsiburada.png" alt="Hepsiburada" /></a>
+                        <a href="#"><img src="/images/pazarama.png" alt="Pazarama" /></a>
+                    </div>
+                </div>
+                <p></p>
+                <div class="col-md-4">
+                    <h5>Geniş Ürün Yelpazesi</h5>
+                    <p>Geniş ürün yelpazesi sayesinde aradığınız ürünlere Mery Ticaret ile kolaylıkla temin
+                        edebilirsiniz</p>
+                    <img src="/images/product.png" alt="Product 1">
+                </div>
+                <div class="col-md-4">
+                    <h5>Hızlı ve Güvenilir</h5>
+                    <p>Güçlü dağıtım ağımız sayesinde Türkiye'nin her noktasına güvenilir ve hızlı bir şekilde teslimat
+                        yapılmaktadır. </p>
+                    <img src="images/fastsecure.png" alt="Product 2">
+                </div>
+                <div class="col-md-4">
+                    <h5>Uzman Destek</h5>
+                    <p> Ürünlerimiz hakkında uzman satış ekibimize e-posta, telefon veya diğer platformlar üzerinden
+                        ulaşabilirsiniz.</p>
+                    <img src="images/support.png" alt="Product 3">
+                </div>
+            </div>
+            <div class="social-icons">
+                <h3>Sosyal Medya</h3>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="https://www.facebook.com/people/Mery-Ticaret/61563966744656/"><img src="/images/facebook.png" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/meryticaret?igsh=aGRtbTU2Y3RxNnI5"><img src="/images/instagram.png" alt="Instagram" /></a>
+                    <a href="https://wa.me/message/7G4ULNXPUJO2B1"><img src="/images/wp.png" alt="WhatsApp" /></a>
+                    <a href="https://www.tiktok.com/@meryticarett?_t=8oZL84nnCce&_r=1"><img src="/images/tiktok.png" alt="Tiktok" /></a>
+                    <a href="https://www.linkedin.com/in/mery-ticaret-3a68a731b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="/images/linkedin.png" alt="linkedin" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-white" style="background-color: #222;">
+        <div class="container">
+            <div class="row align-items-center py-4">
+                <!-- Logo Section -->
+                <div class="col-md-4 text-center text-md-start mb-3 pb-5">
+                    <a class="d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                        <img src="/images/mery.png" alt="Logo" style="height: 100px; width: auto; margin-right: 15px;">
+                        <span class="ms-2 fs-4">Mery Ticaret</span>
+                    </a>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="col-md-4 text-center mb-3 pb-5">
+                    <!--  -->
+                </div> 
+                <!-- Contact Section -->
+                <div id="contact" class="col-md-4 text-center text-md-start mb-3 pb-5">
+                    <h5>İletişim</h5>
+                    <p>Email: meryticaret@outlook.com</p>
+                    <p>Telefon: +90 545 175 13 08 </p>
+                </div>
+            </div>
+            <p class="text-center">&copy; 2024 Mery Ticaret. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
